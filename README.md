@@ -11,7 +11,7 @@ The work was completed during an engineering internship at **Moda Live**, where 
 
 The project is structured around three main components:
 
-### 1. Synthetic Dataset Generation
+### 1. Synthetic dataset generation
 
 A distributed rendering farm produces a multi-parameter video dataset simulating fabrics sliding on surfaces with varying materials and friction levels.
 
@@ -23,7 +23,7 @@ This automated generation pipeline enables the creation of consistent, high-volu
 
 ---
 
-### 2. Learning to Predict Material Categories
+### 2. Learning to predict material categories
 
 The first model predicts the **material class** from a short video clip.
 It acts as a conditioning signal for the friction-estimation model.
@@ -37,7 +37,7 @@ This stage captures surface-specific visual cues that help disambiguate friction
 
 ---
 
-### 3. Conditional Friction Estimation
+### 3. Conditional friction estimation
 
 The second model estimates a discretized friction coefficient, **conditioned on the material distribution** predicted by the first model.
 
@@ -54,7 +54,7 @@ The conditional formulation significantly stabilizes training by separating two 
 
 ---
 
-## Dataset Structure
+## Dataset structure
 
 The dataset is organized so that each video sequence corresponds to a unique combination of:
 
@@ -69,7 +69,7 @@ Both **raw image sequences** and **assembled MP4 videos** are supported by the l
 
 ---
 
-## Model Training & Evaluation
+## Model training & evaluation
 
 The `training/` directory contains:
 
@@ -96,7 +96,7 @@ These results demonstrate that synthetic data, when generated with precise physi
 
 ---
 
-## Repository Structure
+## Repository structure
 
 ```text
 .
