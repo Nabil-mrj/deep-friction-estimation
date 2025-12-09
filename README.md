@@ -118,5 +118,3 @@ These results demonstrate that synthetic data, when generated with precise physi
     │
     └── plot_history.py                        # Plotting of training curves from CSV logs
 ```
-* prepare a polished repository banner or diagram,
-* or help you assemble the GitHub repo structure itself.
