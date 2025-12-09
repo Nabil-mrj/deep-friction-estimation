@@ -1,4 +1,4 @@
-# Estimating Friction Coefficients from Synthetic Video Data
+# Estimating friction coefficients from synthetic video data
 
 This project explores the estimation of friction coefficients from short video sequences using deep learning.
 It combines large-scale synthetic data generation, distributed rendering, and sequence-based neural architectures to model a physical parameter traditionally difficult to infer from vision alone.
