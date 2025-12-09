@@ -47,7 +47,10 @@ The second model estimates a discretized friction coefficient, **conditioned on 
 
 The conditional formulation significantly stabilizes training by separating two entangled sources of variation: material appearance and friction dynamics.
 
-<img width="678" height="661" alt="image" src="https://github.com/user-attachments/assets/8fef5ee8-1466-4d81-b405-1f3b660290ae" />
+<div align="center">
+  <img width="678" height="661" alt="image" src="https://github.com/user-attachments/assets/8fef5ee8-1466-4d81-b405-1f3b660290ae" />
+</div>
+
 
 ---
 
