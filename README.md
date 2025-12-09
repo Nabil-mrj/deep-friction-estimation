@@ -99,10 +99,24 @@ These results demonstrate that synthetic data, when generated with precise physi
 ## Repository Structure
 
 ```text
-render_farm/          Distributed video rendering pipeline
-training/             Dataset utilities, models, training & evaluation
-report/               Project documentation and internship report
-README.md             Overview of the project
+.
+├── README.md
+│
+├── render_farm
+│   ├── server_dispatcher.py                   # Task scheduler & heartbeat monitor for distributed rendering
+│   └── client_houdini.py                      # Houdini-based rendering client (frame generation → video)
+│
+└── training
+    ├── dataset_utils.py                       # Dataset discovery, parsing, frame sampling, Keras generators
+    ├── models.py                              # LRCN video encoder + material model + conditional friction model
+    │
+    ├── train_material_baseline.py             # Training of the material classification model
+    ├── train_friction_model.py                # Training of the conditional friction estimation model
+    │
+    ├── evaluate_material.py                   # Evaluation: metrics, reports, confusion matrix
+    ├── evaluate_friction.py                   # Friction evaluation: accuracy + RMSE
+    │
+    └── plot_history.py                        # Plotting of training curves from CSV logs
 ```
 * prepare a polished repository banner or diagram,
 * or help you assemble the GitHub repo structure itself.
